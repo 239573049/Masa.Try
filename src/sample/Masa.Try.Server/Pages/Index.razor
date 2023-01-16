@@ -1,0 +1,83 @@
+﻿@page "/"
+
+<button class="button" @onclick="Run">刷新</button>
+
+<div class="input-container">
+    <textarea type="text" class="input-box" placeholder="请输入执行代码" >
+        @Code
+    </textarea>
+</div>
+
+@if (ComponentType != null)
+{
+    <DynamicComponent Type="ComponentType"></DynamicComponent>
+}
+
+@code{
+
+    private string Code = @"<body>
+    <div id='app'>
+        <header>
+            <h1>Doctor Who&trade; Episode Database</h1>
+        </header>
+
+        <nav>
+            <a href='main-list'>Main Episode List</a>
+            <a href='search'>Search</a>
+            <a href='new'>Add Episode</a>
+        </nav>
+
+        <h2>Episodes</h2>
+
+        <ul>
+            <li>...</li>
+            <li>...</li>
+            <li>...</li>
+        </ul>
+
+        <footer>
+            Doctor Who is a registered trademark of the BBC. 
+            https://www.doctorwho.tv/
+        </footer>
+    </div>
+</body>";
+
+    private Type? ComponentType;
+
+    private void Run()
+    {
+        ComponentType = CodeRenderingHelper.RenderingToType(new RenderingToTypeOptions()
+        {
+            Code = Code
+        });
+
+        StateHasChanged();
+    }
+
+}
+
+<style>
+    .button{
+        width: 100%;
+        font-size: 22px;
+        background-color: cornflowerblue;
+        border: 0px;
+        margin: 5px;
+        border-radius: 5px;
+        height: 40px;
+    }
+    .input-container {
+        width: 500px;
+        margin: 0 auto;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    } 
+    .input-box {
+        width: 100%;
+        height: 100px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+</style>

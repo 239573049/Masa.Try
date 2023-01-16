@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{375CEB5A-B39F-4E25-9797-5E3E5CFC9820}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Masa.Try", "src\Masa.Try\Masa.Try.csproj", "{259395D5-4AEF-4454-9D4E-04D88ADC8C4D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{9F7C19CA-5192-4E92-BFD7-2CF741073C29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Masa.Try.WebAssemlby", "src\sample\Masa.Try.WebAssemlby\Masa.Try.WebAssemlby.csproj", "{DBBB6EEE-40EC-4B16-B635-A1347BFEAE2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Masa.Try.Server", "src\sample\Masa.Try.Server\Masa.Try.Server.csproj", "{79039853-DB44-48E3-95DC-649C24740813}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{259395D5-4AEF-4454-9D4E-04D88ADC8C4D} = {375CEB5A-B39F-4E25-9797-5E3E5CFC9820}
+		{9F7C19CA-5192-4E92-BFD7-2CF741073C29} = {375CEB5A-B39F-4E25-9797-5E3E5CFC9820}
+		{DBBB6EEE-40EC-4B16-B635-A1347BFEAE2B} = {9F7C19CA-5192-4E92-BFD7-2CF741073C29}
+		{79039853-DB44-48E3-95DC-649C24740813} = {9F7C19CA-5192-4E92-BFD7-2CF741073C29}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{259395D5-4AEF-4454-9D4E-04D88ADC8C4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{259395D5-4AEF-4454-9D4E-04D88ADC8C4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{259395D5-4AEF-4454-9D4E-04D88ADC8C4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{259395D5-4AEF-4454-9D4E-04D88ADC8C4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBBB6EEE-40EC-4B16-B635-A1347BFEAE2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBBB6EEE-40EC-4B16-B635-A1347BFEAE2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBBB6EEE-40EC-4B16-B635-A1347BFEAE2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBBB6EEE-40EC-4B16-B635-A1347BFEAE2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79039853-DB44-48E3-95DC-649C24740813}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79039853-DB44-48E3-95DC-649C24740813}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79039853-DB44-48E3-95DC-649C24740813}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79039853-DB44-48E3-95DC-649C24740813}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
