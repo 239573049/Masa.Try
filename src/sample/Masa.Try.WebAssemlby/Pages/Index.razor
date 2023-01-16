@@ -3,8 +3,7 @@
 <button class="button" @onclick="Run">刷新</button>
 
 <div class="input-container">
-    <textarea type="text" class="input-box" placeholder="请输入执行代码" >
-        @Code
+    <textarea @bind="Code" type="text" class="input-box" placeholder="请输入执行代码" >
     </textarea>
 </div>
 
